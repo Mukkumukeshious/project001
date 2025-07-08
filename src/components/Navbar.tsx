@@ -26,7 +26,7 @@ const Navbar = () => {
           <a className='cursor-pointer hover:text-[#dfdf6a]' href="#header">Home</a>
           <a className='cursor-pointer hover:text-[#ff5100]' href="#about">About</a>
           <a className='cursor-pointer hover:text-[#FFD700]' href="#project">Project</a>
-          <a className='cursor-pointer hover:text-[#FFD700]' href="#testimonilas">Testimonilas</a>
+          <a className='cursor-pointer hover:text-[#FFD700]' href="#testimonials">Testimonilas</a>
         </ul>
         <button className='hidden md:block bg-[#FFF8E1] px-8 py-2 rounded-full'>Sign up</button>
         <IoMenu 

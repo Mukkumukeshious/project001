@@ -1,4 +1,4 @@
-import React, { use, useState } from 'react'
+import React, { use, useEffect, useState } from 'react'
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { ProjectDetails } from '../assets/Assets';
@@ -6,6 +6,21 @@ import { ProjectDetails } from '../assets/Assets';
 const Project = () => {
     const [currentIndex, setCurrentIndex] = useState(0)
     const [showCard, setshowCard] = useState(1)
+
+    useEffect(()=>{
+      const displayProject = ()=>{
+        if(window.innerWidth >= 1024){
+          setshowCard(ProjectDetails.length);
+        }else{
+          setshowCard(1)
+        }
+        };
+        displayProject();
+        window.addEventListener('resize', displayProject);
+        return ()=>window.removeEventListener('resize', displayProject);
+      
+
+    },[])
 
     const nextProject = ()=>{
         setCurrentIndex((prevIndex)=>(prevIndex + 1) %ProjectDetails.length)
