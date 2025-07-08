@@ -24,7 +24,7 @@ const Navbar = () => {
         <img className='h-20' src={logo} alt="" />
         <ul className='hidden md:flex gap-7 text-white font-semibold'>
           <a className='cursor-pointer hover:text-[#dfdf6a]' href="#header">Home</a>
-          <a className='cursor-pointer hover:text-[#FFD700]' href="#about">About</a>
+          <a className='cursor-pointer hover:text-[#ff5100]' href="#about">About</a>
           <a className='cursor-pointer hover:text-[#FFD700]' href="#project">Project</a>
           <a className='cursor-pointer hover:text-[#FFD700]' href="#testimonilas">Testimonilas</a>
         </ul>
